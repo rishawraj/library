@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+    <title>Library App</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--  -->
+      <div class="navbar">
+        <h2>Library</h2>
+        <button>log in</button>
+      </div>
+      <!--  -->
+
+      <!--  -->
+      <div class="add-books">
+        <button id="addButton">+ Add Book</button>
+      </div>
+      <!--  -->
+
+      <!-- library grid -->
+      <div class="library-grid"></div>
+      <!--  -->
+
+      <!-- footer -->
+      <div class="footer">
+        <p>Copyright &#169; 2022 rishawraj</p>
+      </div>
+      <!--  -->
+
+      <!--! modal -->
+      <div class="modal">
+        <div class="modal-nav">
+          <h2>Add a new book!</h2>
+          <button id="close-btn">x</button>
+        </div>
+
+        <form id="book-form">
+          <div class="input">
+            <label for="title">title</label>
+            <input type="text" name="title" id="title" required />
+          </div>
+          <!--  -->
+          <div class="input">
+            <label for="author">author</label>
+            <input type="text" name="author" id="author" required />
+          </div>
+          <!--  -->
+          <div class="input">
+            <label for="pages">pages</label>
+            <input type="number" name="pages" id="pages" required />
+          </div>
+          <!--  -->
+          <div class="input-check">
+            <label for="readStatus">Have you read it?</label>
+            <input type="checkbox" name="readStatus" id="readStatus" />
+          </div>
+          <!--  -->
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

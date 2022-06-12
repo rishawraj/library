@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* !============== container ============================= */
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: lightblue;
+  min-height: 100vh;
+  /* overflow: hidden; */
+}
+/*!========== navbar =====================================  */
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid gray;
+  /* background-color: lavender; */
+}
+.navbar button {
+  font-size: 1rem;
+  font-weight: 500;
+  /* text-decoration: ; */
+  text-transform: capitalize;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  /* border: none; */
+  /* border-radius: 10px; */
+  background-color: lightseagreen;
+  border: 2px solid white;
+}
+.navbar button:hover {
+  background-color: white;
+  border: 2px solid lightseagreen;
+}
+
+/*!=========== add books ======================================  */
+.add-books {
+  /* background-color: lemonchiffon; */
+  width: 100%;
+  padding: 1rem;
+  /* align-items: center; */
+  text-align: center;
+  /* background-color: lightskyblue; */
+}
+.add-books button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: lavenderblush;
+  border: 2px solid black;
+  /* background-color: aliceblue; */
+}
+.add-books button:hover {
+  background-color: lightpink;
+  /* box-shadow:  */
+}
+/*?======= library grid ==========================================  */
+.library-grid {
+  /* background-color: lightcoral; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  /* grid-template-rows: repeat(auto-fit, 250px); */
+}
+.card {
+  background-color: lightgreen;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.card p {
+  margin: 5px;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.card button {
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#delete {
+  background-color: rgb(226, 88, 88);
+}
+
+/* !========== footer ========================================== */
+.footer {
+  margin-top: auto;
+  bottom: 0;
+  background-color: rgb(15, 152, 152);
+  padding: 1rem;
+  /*! position: absolute;  what to do ?*/
+  width: 100%;
+  text-align: center;
+}
+/* ! ======== modal ==================== */
+
+.modal {
+  position: fixed;
+  background-color: teal;
+  padding: 20px;
+  /* z-index: 1; */
+  /* align-items: center; */
+  /*  */
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal .input {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.input input {
+  padding: 5px;
+}
+.modal .input-check {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+.modal button {
+  align-self: center;
+  padding: 5px 10px;
+  margin: 5px;
+}
+.modal-nav {
+  display: flex;
+  align-items: center;
+}
+.modal-nav > *:first-child {
+  margin-right: 15px;
+}
+#close-btn {
+  background-color: lightcoral;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
